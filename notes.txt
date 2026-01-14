@@ -1,0 +1,12 @@
+Goal
+----
+To use non proprietory tools to open a .pst archive (native Outlook archive format) and to parse / read data from it in Python.
+
+1) WSL - installed the pst-utils package 
+   $ sudo apt install pst-utils
+   
+2) Navigate to relevent dir (this was a dir in the working folder which contained the relevant .pst archive content)
+   $ cd /mnt/c/Users/UserPC/OneDrive/Desktop...
+   
+3) WSL command to step through the .pst archive converting content to .eml and write to the output_pst_file dir matching the .pst folder structure
+   $ readpst -r -e -o output_pst_file input_pst_file
